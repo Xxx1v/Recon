@@ -102,7 +102,7 @@ for /l %%i in (1,1,254) do (
 )
 endlocal
 pause
-goto typecmd
+goto clear
 
 :trace
 echo.
