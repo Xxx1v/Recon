@@ -17,7 +17,6 @@ if /I "%c%" EQU "locate" goto locate
 if /I "%c%" EQU "listen" goto listen
 if /I "%c%" EQU "scan" goto scan
 if /I "%c%" EQU "trace" goto trace
-if /I "%c%" EQU "hostip" goto hostname
 if /I "%c%" EQU "ports" goto ports
 if /I "%c%" EQU "dos" goto dos
 if /I "%c%" EQU "about" goto about
@@ -39,7 +38,6 @@ goto clear
 :help
 echo about    - About this program
 echo locate   - Find location of an Ip adress
-echo hostip   - Convert host name to ip adress
 echo trace    - Get the Device/Domain name from Ip address
 echo tracemac - Trace Ip adress
 echo  help    - list all commands
@@ -115,13 +113,6 @@ echo Domain Name: %dns%
 goto typecmd
 
 
-:hostname
-set /p ip="Enter IP address: "
-for /f "tokens=2 delims=: " %%a in ('nslookup %ip% ^| findstr /B /C:"Name:"') do (
-    set hostname=%%a
-)
-echo Hostname for IP %ip% is: %hostname%
-goto typecmd
 
 :ports
 set /p ip=Enter IP address: 
