@@ -71,7 +71,7 @@ goto typecmd
 
 :tracemac
 set /p ipaddress="Enter Ip address: "
-ping -n 1 -w 100%ipaddress% >nul
+ping -n 1 -w 100 %ipaddress% >nul
 	for /f "tokens=2" %%a in ('arp -a %ipaddress% ^| findstr %ipaddress%') do (
     set macaddress=%%a
 )
