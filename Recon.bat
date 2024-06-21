@@ -37,7 +37,7 @@ goto clear
 
 
 :help
-echo about	  - About this program
+echo about    - About this program
 echo locate   - Find location of an Ip adress
 echo hostip   - Convert host name to ip adress
 echo trace    - Get the Device/Domain name from Ip address
@@ -48,7 +48,7 @@ echo clear    - Clear console
 echo  exit    - Exits console
 echo  scan    - Scan your Network  for Ip address
 echo ports    - Ports Scanner
-echo  dos - DoS(Denial of Service) Atack
+echo  dos     -DoS(Denial of Service) Atack
 goto typecmd
 
 
