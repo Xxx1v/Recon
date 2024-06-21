@@ -48,7 +48,7 @@ echo clear    - Clear console
 echo  exit    - Exits console
 echo  scan    - Scan your Network  for Ip address
 echo ports    - Ports Scanner
-echo  dos     -DoS(Denial of Service) Atack
+echo  dos     - DoS(Denial of Service) Atack
 goto typecmd
 
 
