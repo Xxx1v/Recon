@@ -126,6 +126,7 @@ pause >nul
 goto clear
 
 :dos
+cls
 color a
 setlocal
 color a
