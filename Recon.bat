@@ -128,8 +128,7 @@ goto clear
 :dos
 cls
 color a
-setlocal
-color a
+setlocal
 set /p ip=Enter Ip address: 
 set /p port=Enter port: 
 set /p packets=Enter number of packets: 
